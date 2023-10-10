@@ -13,13 +13,11 @@ const Nav = () => {
   };
 
   const toggleModoOscuro = () => {
-    setIsModoOscuro(!isModoOscuro); // Cambia el estado del modo oscuro
+    setIsModoOscuro(!isModoOscuro); 
   
-    // Aquí puedes agregar lógica para cambiar el tema de tu aplicación
-    const appElement = document.querySelector('.App'); // Selecciona el elemento con clase 'App'
+    const appElement = document.querySelector('.App');
   
     if (appElement) {
-      // Si se encontró el elemento, cambia su clase según el estado del modo oscuro
       if (isModoOscuro) {
         appElement.classList.remove('modo-oscuro');
       } else {
